@@ -14,11 +14,14 @@ function UpdateArrayOfObjects()
 
     const addCountry=()=>{
         const newCountry:Country={name:countryName,capital:capitalCity,population:population}
-        setCountries(c=>[...c,newCountry])
+        setCountries(c=>[...c,newCountry]);
+        setCountryName("");
+        setCapitalCity("");
+        setPopulation(0);
     }
 
     const removeCountry=(index:number)=>{
-
+        setCountries(countries.filter((_,i)=> i !== index))
     }
 
     const handldChangeCountryName=(event:any)=>{
@@ -36,7 +39,8 @@ function UpdateArrayOfObjects()
         <div>
             <h2>List of countries</h2>
             <ul>
-                {countries.map((country:Country,index)=> <li key={index}>Country: {country.name}, Capital City:{country.capital}
+                {countries.map((country:Country,index)=> <li key={index} onClick={()=>removeCountry(index)}>
+                    Country: {country.name}, Capital City:{country.capital}, 
                 Population:{country.population}
                 </li>)}
             </ul>

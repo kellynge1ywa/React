@@ -1,6 +1,11 @@
 import { useState } from "react";
 import styles from './Updater.module.css'
 
+interface Car{
+    name:string,
+    
+}
+
 function UpdateArrays()
 {
     const [cars,setCars]=useState([""]);

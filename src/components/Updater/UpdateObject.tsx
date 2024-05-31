@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+
+
 function UpdateObject()
 {
     const [fruit,setFruit]= useState({name:"",price:0,quantity:0});

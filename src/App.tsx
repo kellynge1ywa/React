@@ -4,12 +4,12 @@ import ClickMe from "./components/ClickEvents/Click"
 import ColourPicker from "./components/ColorPicker/ColourPicker"
 
 import Header from "./components/Header/header"
-import OnChange from "./components/OnChange/OnChange"
+// import OnChange from "./components/OnChange/OnChange"
 import UpdateArrayOfObjects from "./components/Updater/UpdateArrayOfObjects"
 import UpdateArrays from "./components/Updater/UpdateArrays"
 import UpdateObject from "./components/Updater/UpdateObject"
 
-import UseState from "./components/UseState/UseState"
+// import UseState from "./components/UseState/UseState"
 
 
 interface Props{}
